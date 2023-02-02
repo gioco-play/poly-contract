@@ -45,4 +45,19 @@ interface PolyServiceInterface
      */
     function accountToOperator(string $op_code, array $vendor, string $vendor_account);
 
+    /**
+     * 全營商 抓取遊戲紀錄
+     *
+     * @param integer $past_minutes
+     * @return mixed
+     */
+    function betLogGrabberAll(int $past_minutes);
+
+    /**
+     * 遊戲上分
+     * @param string $op_code
+     * @param string $account
+     * @return mixed
+     */
+    function gameTransferIn(string $op_code, string $account);
 }
