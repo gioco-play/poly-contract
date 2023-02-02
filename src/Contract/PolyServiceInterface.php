@@ -54,10 +54,13 @@ interface PolyServiceInterface
     function betLogGrabberAll(int $past_minutes);
 
     /**
-     * 遊戲上分
+     * 抓取遊戲紀錄
+     *
      * @param string $op_code
-     * @param string $account
+     * @param integer $past_minutes
+     * @param string $cache_key
      * @return mixed
      */
-    function gameTransferIn(string $op_code, string $account);
+    function betLogGrabber(string $op_code, int $past_minutes, string $cache_key);
+
 }
