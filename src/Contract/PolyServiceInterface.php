@@ -34,7 +34,7 @@ interface PolyServiceInterface
      * @param string $player_name
      * @return mixed
      */
-    function accountToVendor(string $op_code, array $vendor, string $player_name);
+    function accountToVendor(string $op_code, array $vendor, string $member_code);
 
     /**
      * 遊戲商帳號轉換為營商帳號
