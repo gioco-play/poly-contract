@@ -21,11 +21,10 @@ interface PolyServiceInterface
      * @param string $op_code
      * @param string $account
      * @param string $bet_id
-     * @param string $vendor_code
      * @param string $language
      * @return mixed
      */
-    function gameDetail(string $op_code, string $account, string $bet_id, string $vendor_code, string $language);
+    function gameDetail(string $op_code, string $account, string $bet_id, string $language);
 
     /**
      * 營商帳號轉換為遊戲商帳號
